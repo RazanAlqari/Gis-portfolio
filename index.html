@@ -1,0 +1,231 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        padding: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    header {
+        text-align: center;
+        padding: 50px 20px 30px;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+        color: var(--accent-color);
+        margin-bottom: 8px;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+        color: var(--text-color);
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+
+    header p {
+        font-size: 0.95rem;
+        color: var(--text-secondary);
+        max-width: 700px;
+        margin: 0 auto 20px;
+    }
+
+    .social-links a {
+        color: var(--text-color);
+        font-size: 1.4rem;
+        margin: 0 10px;
+        transition: color 0.3s;
+        text-decoration: none;
+    }
+
+    .social-links a:hover {
+        color: var(--accent-color);
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        margin: 40px 0 20px;
+        color: var(--accent-color);
+        border-left: 4px solid var(--accent-color);
+        padding-left: 12px;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .project-card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        padding: 22px;
+        transition: transform 0.3s, border-color 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .project-card:hover {
+        transform: translateY(-4px);
+        border-color: var(--accent-color);
+    }
+
+    .project-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: var(--text-color);
+    }
+
+    .project-card p {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        margin-bottom: 15px;
+    }
+
+    .tag {
+        background-color: rgba(56, 189, 248, 0.1);
+        color: var(--accent-color);
+        padding: 3px 8px;
+        border-radius: 4px;
+        font-size: 0.78rem;
+        font-weight: 600;
+    }
+
+    .btn {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: #0f172a;
+        padding: 8px 14px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        padding: 30px 0;
+        margin-top: 50px;
+        border-top: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+    }
+</style>
+
+<header>
+    <h1>Razan Alqarni</h1>
+    <h2>Spatial Data Analyst | Infrastructure & BI Specialist</h2>
+    <p>Specializing in spatial infrastructure geodatabases, urban service accessibility modeling, Python data analytics, and interactive Power BI dashboards supporting Saudi Vision 2030 initiatives.</p>
+    <div class="social-links">
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/RazanAlqarni" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:RazanAlqarni22@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+</header>
+
+<h2 class="section-title">Core Portfolio Projects</h2>
+
+<div class="projects-grid">
+
+    <!-- Pillar 1: Infrastructure & Urban Sprawl -->
+    <div class="project-card">
+        <div>
+            <h3>Urban Sprawl & LST Infrastructure Analysis</h3>
+            <p>Analyzed multi-temporal Landsat imagery (2013–2021) to assess urban expansion patterns, land cover transitions, and Surface Urban Heat Island (SUHI) effects impacting regional energy and infrastructure.
+</p>
+            <div class="tags">
+                <span class="tag">ArcGIS Pro</span>
+                <span class="tag">Remote Sensing</span>
+                <span class="tag">Urban Sprawl</span>
+                <span class="tag">Infrastructure</span>
+            </div>
+        </div>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+    <!-- Pillar 1: Infrastructure & Amenities -->
+    <div class="project-card">
+        <div>
+            <h3>Urban Amenities & Walkability Analysis (Najran)</h3>
+            <p>Structured a geospatial geodatabase (.gdb) for urban facilities. Applied 500m Buffer Analysis in QGIS to evaluate 5–10 min pedestrian service accessibility and pinpoint coverage gaps.</p>
+            <div class="tags">
+                <span class="tag">QGIS</span>
+                <span class="tag">Geodatabase (.gdb)</span>
+                <span class="tag">Buffer Analysis</span>
+                <span class="tag">Urban Planning</span>
+            </div>
+        </div>
+        <a href="#" class="btn">View Details</a>
+    </div>
+
+    <!-- Pillar 2: Data Analytics (Python) -->
+    <div class="project-card">
+        <div>
+            <h3>Saudi Demographic EDA & Spatial Analytics (Python)</h3>
+            <p>Executed Exploratory Data Analysis (EDA) on national demographic datasets. Cleaned and visualized regional density, age brackets, and spatial population patterns published on Kaggle.</p>
+            <div class="tags">
+                <span class="tag">Python</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">Seaborn</span>
+                <span class="tag">EDA</span>
+                <span class="tag">SQL</span>
+            </div>
+        </div>
+        <a href="https://kaggle.com" target="_blank" class="btn">View Kaggle Notebook</a>
+    </div>
+
+    <!-- Pillar 3: Business Intelligence (Power BI) -->
+    <div class="project-card">
+        <div>
+            <h3>Saudi Arabia Population & Demographic Dashboard</h3>
+            <p>Developed an interactive Power BI dashboard tracking demographic statistics (GASTAT) for 30M+ population using custom DAX metrics, population pyramids, and spatial density KPI visuals.</p>
+            <div class="tags">
+                <span class="tag">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">Data Visualization</span>
+                <span class="tag">KPI Dashboards</span>
+            </div>
+        </div>
+        <a href="#" class="btn">View Dashboard</a>
+    </div>
+
+    <!-- Web GIS Project -->
+    <div class="project-card">
+        <div>
+            <h3>KSA Interactive Administrative Web Map</h3>
+            <p>Front-end interactive web map showcasing Saudi Arabia's administrative regions and spatial layers, deployed directly via GitHub Pages.</p>
+            <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Web GIS</span>
+            </div>
+        </div>
+        <a href="https://razanalqari.github.io/KSA-Interactive-Map/" target="_blank" class="btn">Live Interactive Map</a>
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Razan Alqarni. Built with HTML5 & CSS3 | Hosted on GitHub Pages</p>
+</footer>
+
